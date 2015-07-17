@@ -1,5 +1,6 @@
 <?php
 
+namespace diversen;
 /**
  * simple wrapper of PHPMailer. 
  * just loads most basic settings from config.php 
@@ -34,7 +35,7 @@ class mailsmtp {
     public static function getPHPMailer () {
         $config = conf::get('smtp');
 
-        $mail = new PHPMailer;
+        $mail = new \PHPMailer;
         $mail->SMTPDebug = 3;
         $mail->isSMTP();
         $mail->Host = $config['Host'];
