@@ -1,0 +1,9 @@
+{
+    "name": "diversen/lovecraft-framework",
+    "autoload": {
+        "psr-4" : {
+            "diversen\\": "src/"
+        }
+    }
+}
+
