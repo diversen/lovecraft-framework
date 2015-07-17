@@ -1,6 +1,6 @@
 <?php
 
-namespace diversen
+namespace diversen;
 
 class test {
 
