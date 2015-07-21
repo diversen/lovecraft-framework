@@ -1,12 +1,12 @@
 <?php
 
-namespace diversen;
+namespace diversen\db;
 include_once 'vendor/diversen/lovecraft-framework/src/rb.php';
 
 /**
  * simple db class holding wrappers for Redbean
  */
-class db {
+class rb {
 
     /**
      * 
@@ -27,7 +27,7 @@ class db {
      * connects from configuration config.php
      */
     public static function connectFromConfig () {
-        $config = conf::get('database', 'default');
+        $config = \conf::get('database', 'default');
         self::connect($config);
     }
 }
